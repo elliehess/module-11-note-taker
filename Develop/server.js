@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 // const apiRouter = require('./routes/apiRoute.js');
-// const notesRouter = require('./routes/notesRoute.js')
+const notesRouter = require('./routes/notesRoute.js');
 const notes = require('/Users/ellie/Desktop/bootcamp/challenges/module-11-note-taker/Develop/db/db.json');
 
 //Declare port 
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static('public'));
 //Api and user routes with methods
 // app.use('/api', apiRouter);
-// app.use('/notes', notesRouter);
+app.use('/notes', notesRouter);
 
 
 
