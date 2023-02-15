@@ -16,7 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 //Api and user routes with methods
 app.use('/api', api);
-// app.use('/notes', notesRouter);
 
 
 
@@ -27,15 +26,6 @@ app.get('/notes', (req, res) =>
 //GET route to return notes from db
 app.get('/api/notes', (req, res) =>
   res.json(notes)
-//   {
-//     fs.readFile('./db/db.json', 'utf8', (err,data) => {
-//       if(err){
-//         console.error(err)
-//       } else  
-    
-//     res.json(JSON.parse(data));
-//   })
-// })
 );
 
 // GET Route for homepage
