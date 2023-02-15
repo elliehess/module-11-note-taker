@@ -23,7 +23,7 @@ This is a note tracker application so that you are able to write, save, and dele
 <img width="1324" alt="Screen Shot 2023-02-15 at 11 28 52 AM" src="https://user-images.githubusercontent.com/118075347/219134222-b9a22b50-e7cb-4048-af3e-a3745f599211.png">
 
 
-[Click here to deploy Heroku Application](https://ancient-tor-12985.herokuapp.com/)
+[Click here to deploy Heroku Application](https://ancient-tor-12985.herokuapp.com/)https://ancient-tor-12985.herokuapp.com/
 
 ## Installation
 
