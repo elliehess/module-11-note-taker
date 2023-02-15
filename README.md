@@ -16,6 +16,12 @@ This is a note tracker application so that you are able to write, save, and dele
 
 ## Visuals
 
+<img width="1298" alt="Screen Shot 2023-02-15 at 11 28 11 AM" src="https://user-images.githubusercontent.com/118075347/219134169-ab3a835f-00d8-4640-bfba-94b6276d6fa7.png">
+
+<img width="1323" alt="Screen Shot 2023-02-15 at 11 28 26 AM" src="https://user-images.githubusercontent.com/118075347/219134191-4311d4c8-5ed8-4cb3-9503-a9c51f3a0671.png">
+
+<img width="1324" alt="Screen Shot 2023-02-15 at 11 28 52 AM" src="https://user-images.githubusercontent.com/118075347/219134222-b9a22b50-e7cb-4048-af3e-a3745f599211.png">
+
 
 [Click here for Heroku Application](https://ancient-tor-12985.herokuapp.com/)
 
