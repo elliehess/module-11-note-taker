@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-// const apiRouter = require('./routes/apiRoute.js');
-const notesRouter = require('./routes/notesRoute.js');
-const notes = require('/Users/ellie/Desktop/bootcamp/challenges/module-11-note-taker/Develop/db/db.json');
+const api = require('./routes/index');
+// const notesRouter = require('./routes/notesRoute.js');
+const notes = require('./db/db.json');
 
 //Declare port 
 const PORT = process.env.PORT || 5001;
@@ -12,11 +12,11 @@ const app = express();
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 //Api and user routes with methods
-// app.use('/api', apiRouter);
-app.use('/notes', notesRouter);
+app.use('/api', api);
+// app.use('/notes', notesRouter);
 
 
 
@@ -27,6 +27,15 @@ app.get('/notes', (req, res) =>
 //GET route to return notes from db
 app.get('/api/notes', (req, res) =>
   res.json(notes)
+//   {
+//     fs.readFile('./db/db.json', 'utf8', (err,data) => {
+//       if(err){
+//         console.error(err)
+//       } else  
+    
+//     res.json(JSON.parse(data));
+//   })
+// })
 );
 
 // GET Route for homepage
